@@ -35,6 +35,10 @@ checkpoints/
 .DS_Store
 Thumbs.db
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> experimentacion
 # files
 *.csv
 *.json

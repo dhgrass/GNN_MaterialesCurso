@@ -8,6 +8,8 @@ Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Py
 - notebooks/1_Graph_Convolutional_Networks.ipynb
 - notebooks/2_Graph_Attention_Network.ipynb
 - notebooks/3_GraphSAGE.ipynb
+- notebooks/8_PREFETCH_DATASETS.ipynb
+- notebooks/9_BONUS_GraphRAG_Cora_CiteSeer.ipynb
 - data/ (cache de datasets descargados en ejecucion)
 - slides/ (material docente de apoyo)
 - docs/migracion_linux.md
@@ -57,6 +59,8 @@ Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Py
 2. notebooks/1_Graph_Convolutional_Networks.ipynb (60-75 min)
 3. notebooks/2_Graph_Attention_Network.ipynb (50-60 min)
 4. notebooks/3_GraphSAGE.ipynb (contenido extra o comparativa)
+5. notebooks/8_PREFETCH_DATASETS.ipynb (5 min antes de clase)
+6. notebooks/9_BONUS_GraphRAG_Cora_CiteSeer.ipynb (20-30 min cierre)
 
 ## Verificacion rapida del entorno
 
@@ -75,6 +79,11 @@ Comprobacion opcional de extensiones compiladas:
 ## Nota sobre datasets
 
 Los datasets se descargan en la carpeta data/ durante la ejecucion. Esta carpeta esta ignorada por git para mantener el repositorio ligero.
+
+Para blindar la clase frente a problemas de red:
+
+- Ejecutar notebooks/8_PREFETCH_DATASETS.ipynb antes de la sesion.
+- El bonus intenta Cora (Plan A) y, si falla, usa CiteSeer (Plan B).
 
 ## Politica de notebooks en git
 
