@@ -1,13 +1,16 @@
-# GNN_Materiales
+# GNN_MaterialesCurso
 
-Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Python.
+Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Python para sesiones de clase practicas.
 
-## Contenido del proyecto
+## Estructura del proyecto
 
-- 0_GNN_Introduction.ipynb
-- 1_Graph_Convolutional_Networks.ipynb
-- 2_Graph_Attention_Network.ipynb
-- 3_GraphSAGE.ipynb
+- notebooks/0_GNN_Introduction.ipynb
+- notebooks/1_Graph_Convolutional_Networks.ipynb
+- notebooks/2_Graph_Attention_Network.ipynb
+- notebooks/3_GraphSAGE.ipynb
+- data/ (cache de datasets descargados en ejecucion)
+- slides/ (material docente de apoyo)
+- docs/migracion_linux.md
 - setup_linux.sh
 - setup_windows.ps1
 - requirements.txt
@@ -23,7 +26,7 @@ Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Py
 1. Clonar repositorio
 
    git clone <URL_DEL_REPO>
-   cd GNN_Materiales
+   cd GNN_MaterialesCurso
 
 2. Crear entorno e instalar dependencias (segun sistema)
 
@@ -46,7 +49,14 @@ Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Py
 
 5. Ejecutar notebooks
 
-   Ejecutar celdas de arriba a abajo.
+   Ejecutar celdas de arriba a abajo, sin instalar paquetes dentro de celdas.
+
+## Orden sugerido de notebooks para clase
+
+1. notebooks/0_GNN_Introduction.ipynb (20-40 min)
+2. notebooks/1_Graph_Convolutional_Networks.ipynb (60-75 min)
+3. notebooks/2_Graph_Attention_Network.ipynb (50-60 min)
+4. notebooks/3_GraphSAGE.ipynb (contenido extra o comparativa)
 
 ## Verificacion rapida del entorno
 
@@ -64,36 +74,15 @@ Comprobacion opcional de extensiones compiladas:
 
 ## Nota sobre datasets
 
-Los directorios CiteSeer/ y Pubmed/ son datos descargados automaticamente por los notebooks. No se suben al repositorio; se regeneran al ejecutar los notebooks.
+Los datasets se descargan en la carpeta data/ durante la ejecucion. Esta carpeta esta ignorada por git para mantener el repositorio ligero.
 
-## Por que existe la carpeta .vscode
+## Politica de notebooks en git
 
-.vscode guarda preferencias locales del editor (por ejemplo, que interprete Python usar). Es util en local, pero no necesaria para estudiantes, por eso se excluye en .gitignore.
-
-## Publicar en GitHub (docente)
-
-1. Inicializar git (una sola vez)
-
-   git init
-
-2. Agregar archivos
-
-   git add .
-
-3. Primer commit
-
-   git commit -m "Initial commit: GNN materials"
-
-4. Crear repositorio vacio en GitHub (sin README, sin .gitignore)
-
-5. Conectar remoto y subir
-
-   git remote add origin <URL_GITHUB>
-   git branch -M main
-   git push -u origin main
+- No incluir celdas de instalacion con pip.
+- Evitar guardar outputs pesados (imagenes/video embebidos) salvo cuando sean estrictamente necesarios.
 
 ## Recomendaciones para clase
 
-- Compartir este README con el alumnado.
+- Compartir este README con el alumnado antes de la sesion.
 - Pedir Python 3.10 para evitar diferencias de versiones.
 - Si un estudiante no puede instalar torch_scatter/torch_sparse, puede continuar con la mayoria del contenido.
