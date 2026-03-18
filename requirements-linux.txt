@@ -1,0 +1,3 @@
+# Backward-compatible file.
+# Use requirements.txt as the common dependency source for Linux and Windows.
+-r requirements.txt
