@@ -34,3 +34,13 @@ checkpoints/
 *.log
 .DS_Store
 Thumbs.db
+
+# files
+*.csv
+*.json
+*.xlsx
+*.h5
+*.pt
+*.ckpt
+*.onnx
+*.txt
