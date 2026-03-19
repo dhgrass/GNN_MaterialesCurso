@@ -2,6 +2,11 @@
 
 Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Python para sesiones de clase practicas.
 
+## Punto de entrada rapido
+
+- Si eres estudiante: START_HERE_STUDENTS.md
+- Si eres docente: docs/orientaciones_practicas_gnn_graphrag.md y docs/guion_bonus_graphrag.md
+
 ## Estructura del proyecto
 
 - notebooks/0_GNN_Introduction.ipynb
@@ -9,11 +14,10 @@ Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Py
 - notebooks/2_Graph_Attention_Network.ipynb
 - notebooks/3_GraphSAGE.ipynb
 - notebooks/6_PRACTICA_GNN_30MIN_STUDENT.ipynb
-- notebooks/6_PRACTICA_GNN_30MIN_SOLUTIONS.ipynb
 - notebooks/7_PRACTICA_GraphRAG_LIGHT_STUDENT.ipynb
-- notebooks/7_PRACTICA_GraphRAG_LIGHT_SOLUTIONS.ipynb
 - notebooks/8_PREFETCH_DATASETS.ipynb
 - notebooks/9_BONUS_GraphRAG_Cora_CiteSeer.ipynb
+- START_HERE_STUDENTS.md
 - data/ (cache de datasets descargados en ejecucion)
 - slides/ (material docente de apoyo)
 - docs/migracion_linux.md
@@ -69,6 +73,11 @@ Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Py
 6. notebooks/7_PRACTICA_GraphRAG_LIGHT_STUDENT.ipynb (10-15 min practica opcional)
 7. notebooks/8_PREFETCH_DATASETS.ipynb (5 min antes de clase)
 8. notebooks/9_BONUS_GraphRAG_Cora_CiteSeer.ipynb (20-30 min cierre)
+
+## Nota sobre notebooks de soluciones
+
+Los notebooks con soluciones del profesor NO se publican en este repositorio.
+En la version para estudiantes solo se incluyen notebooks tipo *STUDENT.
 
 ## Verificacion rapida del entorno
 
