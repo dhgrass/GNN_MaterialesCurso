@@ -13,6 +13,7 @@ Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Py
 - data/ (cache de datasets descargados en ejecucion)
 - slides/ (material docente de apoyo)
 - docs/migracion_linux.md
+- docs/guion_bonus_graphrag.md
 - setup_linux.sh
 - setup_windows.ps1
 - requirements.txt
@@ -95,3 +96,4 @@ Para blindar la clase frente a problemas de red:
 - Compartir este README con el alumnado antes de la sesion.
 - Pedir Python 3.10 para evitar diferencias de versiones.
 - Si un estudiante no puede instalar torch_scatter/torch_sparse, puede continuar con la mayoria del contenido.
+- Para el cierre, usar docs/guion_bonus_graphrag.md como guia minuto a minuto.
