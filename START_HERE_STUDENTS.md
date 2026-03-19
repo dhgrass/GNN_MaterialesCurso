@@ -24,11 +24,29 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\setup_windows.ps1
 ```
 
+Que significa este comando en Windows:
+
+1. Set-ExecutionPolicy con Scope Process solo habilita scripts en esa terminal actual.
+2. No cambia la politica de todo el sistema de forma permanente.
+3. Al cerrar la terminal, ese permiso temporal se pierde.
+
+Que hace el setup (Linux y Windows):
+
+1. Crea la carpeta .venv si no existe.
+2. Instala dependencias del proyecto.
+3. Registra kernel de notebooks con nombre Python (gnn-materiales).
+
 ## 3) Abrir en VS Code y elegir kernel
 
 1. Abrir carpeta del proyecto en VS Code.
 2. Abrir cualquier notebook.
 3. Seleccionar kernel: Python (gnn-materiales).
+
+Si no aparece ese nombre:
+
+1. Reiniciar VS Code o recargar ventana.
+2. Seleccionar primero el interprete de .venv.
+3. Volver al notebook y escoger el kernel de nuevo.
 
 ## 4) Ejecutar prefetch de datasets (una vez)
 
@@ -38,13 +56,20 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 ## 5) Orden recomendado de trabajo
 
+0. notebooks/8_PREFETCH_DATASETS.ipynb (solo una vez al inicio)
 1. notebooks/0_GNN_Introduction.ipynb
 2. notebooks/1_Graph_Convolutional_Networks.ipynb
 3. notebooks/2_Graph_Attention_Network.ipynb
 4. notebooks/3_GraphSAGE.ipynb
 5. notebooks/6_PRACTICA_GNN_30MIN_STUDENT.ipynb
-6. notebooks/7_PRACTICA_GraphRAG_LIGHT_STUDENT.ipynb (opcional)
-7. notebooks/9_BONUS_GraphRAG_Cora_CiteSeer.ipynb
+6. notebooks/7_PRACTICA_GraphRAG_LIGHT_STUDENT.ipynb (opcional, version corta)
+7. notebooks/9_BONUS_GraphRAG_Cora_CiteSeer.ipynb (version completa)
+
+Para evitar confusion:
+
+1. El notebook 8 es solo preparacion tecnica de datos, no contenido teorico.
+2. El notebook 7 es practica corta para estudiantes.
+3. El notebook 9 es bonus de cierre con pipeline mas completo.
 
 ## 6) Regla simple para evitar errores
 
