@@ -8,12 +8,17 @@ Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Py
 - notebooks/1_Graph_Convolutional_Networks.ipynb
 - notebooks/2_Graph_Attention_Network.ipynb
 - notebooks/3_GraphSAGE.ipynb
+- notebooks/6_PRACTICA_GNN_30MIN_STUDENT.ipynb
+- notebooks/6_PRACTICA_GNN_30MIN_SOLUTIONS.ipynb
+- notebooks/7_PRACTICA_GraphRAG_LIGHT_STUDENT.ipynb
+- notebooks/7_PRACTICA_GraphRAG_LIGHT_SOLUTIONS.ipynb
 - notebooks/8_PREFETCH_DATASETS.ipynb
 - notebooks/9_BONUS_GraphRAG_Cora_CiteSeer.ipynb
 - data/ (cache de datasets descargados en ejecucion)
 - slides/ (material docente de apoyo)
 - docs/migracion_linux.md
 - docs/guion_bonus_graphrag.md
+- docs/orientaciones_practicas_gnn_graphrag.md
 - setup_linux.sh
 - setup_windows.ps1
 - requirements.txt
@@ -60,8 +65,10 @@ Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Py
 2. notebooks/1_Graph_Convolutional_Networks.ipynb (60-75 min)
 3. notebooks/2_Graph_Attention_Network.ipynb (50-60 min)
 4. notebooks/3_GraphSAGE.ipynb (contenido extra o comparativa)
-5. notebooks/8_PREFETCH_DATASETS.ipynb (5 min antes de clase)
-6. notebooks/9_BONUS_GraphRAG_Cora_CiteSeer.ipynb (20-30 min cierre)
+5. notebooks/6_PRACTICA_GNN_30MIN_STUDENT.ipynb (30 min practica guiada)
+6. notebooks/7_PRACTICA_GraphRAG_LIGHT_STUDENT.ipynb (10-15 min practica opcional)
+7. notebooks/8_PREFETCH_DATASETS.ipynb (5 min antes de clase)
+8. notebooks/9_BONUS_GraphRAG_Cora_CiteSeer.ipynb (20-30 min cierre)
 
 ## Verificacion rapida del entorno
 
@@ -97,3 +104,4 @@ Para blindar la clase frente a problemas de red:
 - Pedir Python 3.10 para evitar diferencias de versiones.
 - Si un estudiante no puede instalar torch_scatter/torch_sparse, puede continuar con la mayoria del contenido.
 - Para el cierre, usar docs/guion_bonus_graphrag.md como guia minuto a minuto.
+- Para practicas guiadas, usar docs/orientaciones_practicas_gnn_graphrag.md.
