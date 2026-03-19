@@ -51,6 +51,12 @@ Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Py
    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
    .\setup_windows.ps1
 
+   Nota importante:
+
+   - El comando Set-ExecutionPolicy con Scope Process solo aplica a la terminal actual.
+   - setup_linux.sh y setup_windows.ps1 crean la carpeta .venv si no existe.
+   - Ambos scripts registran el kernel de Jupyter con nombre Python (gnn-materiales).
+
 3. Abrir en VS Code
 
    code .
@@ -59,20 +65,29 @@ Materiales didacticos sobre Redes Neuronales de Grafos (GNN) con notebooks en Py
 
    Python (gnn-materiales)
 
+   Si no aparece de inmediato en VS Code, reinicia VS Code o recarga la ventana.
+   Como alternativa, selecciona el interprete dentro de .venv y vuelve a abrir el notebook.
+
 5. Ejecutar notebooks
 
    Ejecutar celdas de arriba a abajo, sin instalar paquetes dentro de celdas.
 
 ## Orden sugerido de notebooks para clase
 
+0. notebooks/8_PREFETCH_DATASETS.ipynb (5 min una sola vez, al inicio)
 1. notebooks/0_GNN_Introduction.ipynb (20-40 min)
 2. notebooks/1_Graph_Convolutional_Networks.ipynb (60-75 min)
 3. notebooks/2_Graph_Attention_Network.ipynb (50-60 min)
 4. notebooks/3_GraphSAGE.ipynb (contenido extra o comparativa)
 5. notebooks/6_PRACTICA_GNN_30MIN_STUDENT.ipynb (30 min practica guiada)
-6. notebooks/7_PRACTICA_GraphRAG_LIGHT_STUDENT.ipynb (10-15 min practica opcional)
-7. notebooks/8_PREFETCH_DATASETS.ipynb (5 min antes de clase)
-8. notebooks/9_BONUS_GraphRAG_Cora_CiteSeer.ipynb (20-30 min cierre)
+6. notebooks/7_PRACTICA_GraphRAG_LIGHT_STUDENT.ipynb (10-15 min practica opcional y puente al bonus)
+7. notebooks/9_BONUS_GraphRAG_Cora_CiteSeer.ipynb (20-30 min cierre)
+
+## Relacion entre 7, 8 y 9
+
+- notebooks/8_PREFETCH_DATASETS.ipynb no es contenido de clase: solo prepara datasets para evitar fallos de red.
+- notebooks/7_PRACTICA_GraphRAG_LIGHT_STUDENT.ipynb es una practica corta para alumnado (version simplificada).
+- notebooks/9_BONUS_GraphRAG_Cora_CiteSeer.ipynb es la demo completa de cierre (version extendida).
 
 ## Nota sobre notebooks de soluciones
 
@@ -88,6 +103,8 @@ Linux/macOS:
 Windows (PowerShell):
 
 .\.venv\Scripts\python.exe -c "import torch, torch_geometric; print('OK')"
+
+Si estos comandos funcionan, la .venv esta creada correctamente y el kernel deberia quedar disponible.
 
 Comprobacion opcional de extensiones compiladas:
 
