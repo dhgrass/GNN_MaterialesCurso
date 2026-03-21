@@ -76,3 +76,32 @@ Para evitar confusion:
 1. Ejecutar las celdas de arriba hacia abajo.
 2. No instalar paquetes dentro de notebooks.
 3. Si algo falla, reiniciar kernel y ejecutar de nuevo desde la primera celda.
+
+## 7) Regla de Git para no tocar ramas del docente
+
+Objetivo: trabajar sin modificar `main` ni `experimentacion` del repositorio original.
+
+Flujo recomendado (fork):
+
+1. En GitHub, crear un fork de este repo en su propia cuenta.
+2. Clonar su fork (no el repo del docente).
+3. Crear una rama propia para su trabajo.
+
+```bash
+git clone <URL_DE_TU_FORK>
+cd GNN_MaterialesCurso
+git switch -c trabajo-<tu_nombre>
+```
+
+Si ya clonaron el repo original por error, bloquear push directo al docente:
+
+```bash
+git remote rename origin upstream
+git remote add origin <URL_DE_TU_FORK>
+git push -u origin trabajo-<tu_nombre>
+```
+
+Regla final:
+
+1. `upstream` (docente) se usa solo para `pull`.
+2. `origin` (fork del estudiante) se usa para `push`.
